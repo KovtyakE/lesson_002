@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # есть зашифрованное сообщение
-
 secret_message = [
     'квевтфпп6щ3стмзалтнмаршгб5длгуча',
     'дьсеы6лц2бане4т64ь4б3ущея6втщл6б',
@@ -20,5 +19,9 @@ secret_message = [
 #
 # Требуется задать конкретные индексы, например secret_message[3][12:23:4]
 # Если нужны вычисления и разные пробы - делайте это в консоли пайтона, тут нужен только результат
-
-# TODO вывести расшифрованное сообщение
+decode_1 = secret_message[0][3]
+decode_2 = secret_message[1][9:13]
+decode_3 = secret_message[2][5:15:2]
+decode_4 = secret_message[3][12:6:-1]
+decode_5 = secret_message[4][20:15:-1]
+print(decode_1, decode_2, decode_3, decode_4, decode_5)
